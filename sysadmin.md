@@ -270,6 +270,7 @@ A curated list of amazingly awesome open source sysadmin resources inspired by [
 * [RRDtool](http://oss.oetiker.ch/rrdtool/) -  开源企业标准，用于时间序列数据的高性能数据记录和绘图系统
 * [Statsd](https://github.com/etsy/statsd/) - 应用统计监听
 * [Cyanite](https://github.com/pyr/cyanite) - cyanite stores your metrics，compatible with the Graphite eco-system
+* [Graphite-api](https://github.com/brutasse/graphite-api) - 提供http接口，可以和grafana结合
 
 ## 网络配置管理
 *网络配置管理工具.*
