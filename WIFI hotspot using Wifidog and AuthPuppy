@@ -1,0 +1,40 @@
+无线热点技术很成熟了，有很多现成的解决方案。
+
+当然无线路由自带的系统是肯定没这功能的，得靠刷第三方固件实现。
+
+### 第三方固件
+
+常见的第三方固件主要有三种：
+
+1. OpenWRT 功能强大，社区活跃，软件多，相当于一个轻量级的 linux，但有一定学习曲线
+2. Tomato 设置简单，稳定性好，拓展性不是很强
+3. DD-WRT 安装简单，功能虽不如 OpenWRT 那么强，但也足够了，重点是支持的路由型号最广，社区活跃度高
+
+如果想做的深入当然是 OpenWRT 比较好，不过前期建议用 DD-WRT 就行。
+
+### 热点
+
+实现 wireless@koipy 热点，关键字搜 `dd-wrt hotspot`，比较成熟的解决方案是 `Wifidog + AuthPuppy`
+
+- Wifidog 是验证服务器，DD-WRT 内置对应的客户端
+- AuthPuppy 是认证服务器，负责对接 koipy 自己的用户数据库（需要自己写点代码实现接口，需要懂一点 Symfony 框架）
+
+网上资料很多，具体安装配置步骤我就不重复了。
+
+### 关于路由器的采购
+
+基本上只要能刷 DD-WRT 的就行，性价比高点的 Netgear 3700 - 4x00 都行，淘宝上很多洋垃圾卖家还负责刷好 DD-WRT，如果打算大规模部署，最好找产量大，货源稳定的型号。
+
+需要注意的是，DD-WRT 也分很多版本，内置的功能模块也不一样。购买时最好确定该路由能不能刷入内置 wifidog 的版本。
+
+个版本内置功能列表： http://www.dd-wrt.com/wiki/index.php/What_is_DD-WRT%3F#K2.4_Build_Features
+
+- Mini Hotspot Kaid
+- Nokaid
+- STD
+- STD Nokaid
+- STD Nokaid USB
+- Big
+- Mega
+
+以上几个版本都可以正常使用 Wifidog 功能
