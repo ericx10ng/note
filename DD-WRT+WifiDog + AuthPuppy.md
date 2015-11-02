@@ -12,23 +12,24 @@
 ### 方法1
 
 - 安装xampp
-- 下载 AuthPuppy 源码包 https://launchpad.net/authpuppy
+- 下载 AuthPuppy 源码包
 - 解压至xampp的htdoc目录
+- - 修改文件所有者以免出现权限问题报错 `chown -R 0777 authpuppy`
 - 修改etc/extra/httpd-xampp.conf最下面的，改为Require all granted
-- 访问服务器,比如localhost/authpuppy/web/, 按指引安装即可（db需要先创建）
+- 访问服务器,比如192.168.1.10/authpuppy/web/, 按指引安装即可（db需要先创建）
 
 ### 方法2
 
-- 下载 AuthPuppy 源码包 https://launchpad.net/authpuppy
+- 下载 AuthPuppy 源码包
 - 解压 `tar zxvf authpuppy-1.0.0-stable.tgz`
 - 移动到网站目录 `mv authpuppy /var/www/`
 - 修改文件所有者以免出现权限问题报错 `chown -R www-data:www-data /var/www/authpuppy`
 - 创建 MySQL 数据库（略）
 - 创建 Apache/Nginx 虚拟主机
 	- 网站路径：`/var/www/authpuppy/web`
-	- 绑定域名：`auth.blackmagic.science`
+	- 绑定域名：
 	- 启用 `url rewrite`
-- 打开 http://auth.blackmagic.science 执行 AuthPuppy 安装程序
+- 打开192.168.1.10/authpuppy/web/, 执行 AuthPuppy 安装程序
 
 ## 添加新节点
 
@@ -56,9 +57,9 @@
 
 ```
 AuthServer {
-    Hostname auth.blackmagic.science
+    Hostname 192.168.1.10
     SSLAvailable no
-    Path /
+    Path /authpuppy/web/
 }
 ```
 
