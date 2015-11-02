@@ -14,7 +14,7 @@
 - 安装xampp
 - 下载 AuthPuppy 源码包 https://launchpad.net/authpuppy
 - 解压至xampp的htdoc目录
-- 修改xampp最下面的，改为Allow ALL
+- 修改etc/extra/httpd-xampp.conf最下面的，改为Require all granted
 - 访问服务器,比如localhost/authpuppy/web/, 按指引安装即可（db需要先创建）
 
 ### 方法2
