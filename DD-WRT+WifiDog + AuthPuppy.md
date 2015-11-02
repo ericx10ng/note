@@ -8,13 +8,17 @@
 每个路由器就是一个节点（node）
 
 ## AuthPuppy 的安装
-### 方法1:
+
+### 方法1
+
 - 安装xampp
 - 下载 AuthPuppy 源码包 https://launchpad.net/authpuppy
 - 解压至xampp的htdoc目录
 - 修改xampp最下面的，改为Allow ALL
 - 访问服务器,比如localhost/authpuppy/web/, 按指引安装即可（db需要先创建）
-### 方法2:
+
+### 方法2
+
 - 下载 AuthPuppy 源码包 https://launchpad.net/authpuppy
 - 解压 `tar zxvf authpuppy-1.0.0-stable.tgz`
 - 移动到网站目录 `mv authpuppy /var/www/`
@@ -68,5 +72,5 @@ AuthServer {
 - 认证页面的美化
 - 白名单
 
-## bug
+## Bug
 - DD-WRT Netgear 3700无法自动重定向, 比如路由器地址192.168.1.1, 需要手动访问192.168.1.1:2060，才会引导至认证页面
