@@ -6,6 +6,8 @@
         magic_quotes_gpc = Off
         
         wget http://pecl.php.net/get/APC-3.1.13.tgz
+        phpize
+        ./configure --enable-apc
         
         echo "apc__extension=/usr/lib64/php/modules/apc.so" >> /etc/php.ini
         
