@@ -19,7 +19,7 @@
         root /var/www/;
         
         location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
-                try_files $uri =404;
+            try_files $uri =404;
         }
         
         location ~ /authpuppy/web/ {
