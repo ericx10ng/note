@@ -8,9 +8,7 @@
         wget http://pecl.php.net/get/APC-3.1.13.tgz
         phpize
         ./configure --enable-apc
-        
         echo "apc__extension=/usr/lib64/php/modules/apc.so" >> /etc/php.ini
-        
         ln -s /usr/lib64/php/modules/apc.so /usr/lib/
         
         拷贝authpuppy到/var/www/
