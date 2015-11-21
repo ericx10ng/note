@@ -15,7 +15,7 @@
 - 下载 AuthPuppy 源码包
 - 解压至xampp的htdoc目录
 - - 修改文件所有者以免出现权限问题报错 `chown -R 0777 authpuppy`
-- 修改etc/extra/httpd-xampp.conf最下面的，改为Require all granted
+- 修改etc/extra/httpd-xampp.conf最下面的，Require local改为Require all granted
 - 访问服务器,比如192.168.1.10/authpuppy/web/, 按指引安装即可（db需要先创建）
 
 ### 方法2
