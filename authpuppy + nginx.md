@@ -40,8 +40,8 @@
 
 # 问题
 
-配置authppy时，db连接一直失败。定位：
-－ 找到出错的字符串的所在代码位置："Impossible to connect to the database"
+配置authpuppy时，db连接一直失败。定位：
+－ 找到出错的字符串所在代码位置："Impossible to connect to the database"
 － 修改代码，把异常信息打印出来：$this->getUser()->setFlash('error', $e, false);
 － 异常：exception 'Doctrine_Connection_Exception' with message 'Couldn't locate driver named mysql'
 － 安装php-mysql
