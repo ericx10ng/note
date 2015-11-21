@@ -47,3 +47,8 @@
 － 安装php-mysql
 
 解决办法：yum install php-mysql
+
+参考：
+http://www.cnblogs.com/MarkGrid/p/4113408.html
+http://bbs.csdn.net/topics/390036982
+
