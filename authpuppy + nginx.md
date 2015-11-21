@@ -1,7 +1,7 @@
 # 安装
         yum install -y libxslt libxslt-devel  php-pdo php-xml php-mbstring php-process php-devel
         
-        vi etc/php.ini
+        vi /etc/php.ini
         short_open_tag = Off
         magic_quotes_gpc = Off
         
