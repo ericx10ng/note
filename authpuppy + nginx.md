@@ -21,8 +21,16 @@
         location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
             try_files $uri =404;
         }
-        
+
+        location ~ \.php$ {
+            include        fastcgi_params;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        }
+         
         location ~ /authpuppy/web/ {
+            try_files $uri $uri/ /authpuppy/web/index.php?q=$uri&$args;
             include        fastcgi_params;
             fastcgi_pass   127.0.0.1:9000;
             fastcgi_index  index.php;
