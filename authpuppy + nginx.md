@@ -42,13 +42,13 @@
 
 * 配置authpuppy时，db连接一直失败
 定位：
-        * 找到出错的字符串所在代码位置："Impossible to connect to the database"
-        * 修改代码，把异常信息打印出来：$this->getUser()->setFlash('error', $e, false);
-        * 异常：exception 'Doctrine_Connection_Exception' with message 'Couldn't locate driver named mysql'
-        * 解决办法：安装php-mysql, yum install php-mysql
+    * 找到出错的字符串所在代码位置："Impossible to connect to the database"
+    * 修改代码，把异常信息打印出来：$this->getUser()->setFlash('error', $e, false);
+    * 异常：exception 'Doctrine_Connection_Exception' with message 'Couldn't locate driver named mysql'
+    * 解决办法：安装php-mysql, yum install php-mysql
 
 * session写失败, admin登录不写权限添加进去
-        * 写权限添加 /var/lib/php/session/
+    * 写权限添加 /var/lib/php/session/
 
 参考：
 http://www.cnblogs.com/MarkGrid/p/4113408.html
