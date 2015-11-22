@@ -50,6 +50,6 @@
     * 写权限添加 /var/lib/php/session/
 
 参考：
-http://www.cnblogs.com/MarkGrid/p/4113408.html
-http://bbs.csdn.net/topics/390036982
+* http://www.cnblogs.com/MarkGrid/p/4113408.html
+* http://bbs.csdn.net/topics/390036982
 
