@@ -46,7 +46,7 @@
     * 异常：exception 'Doctrine_Connection_Exception' with message 'Couldn't locate driver named mysql'
     * 解决办法：安装php-mysql, yum install php-mysql
 
-* session写失败, admin登录不写权限添加进去
+* session写失败, admin登录进去
     * 写权限添加 /var/lib/php/session/
 
 参考：
